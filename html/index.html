@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>HubCamp - Home</title>
+    <link type="text/css" rel="stylesheet" href="css/vendor/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/myStyles.css">
+</head>
+<style>
+    .jumbotron {
+        background-color: rgba(155,155,155,.5);
+    }
+</style>
+
+
+<body>
+    🔥🔥🔥🔥 start javascript 🔥🔥🔥🔥
+    <div class='jumbotron text-center'>
+        <h1 id="foo\bar">Foo Fighters go out</h1>
+        <h2 id="foo:bar">Foo Fighters alv</h2>
+        <h2 class="foo">Foo Fighters al Corona
+            <span>u otro grupo</span>
+        </h2>
+
+        <button type='button'
+                class='btn btn-primary'
+                onclick='changeText()'>
+            ¿Iré al Corona?
+        </button>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        const header = document.querySelector('.foo span');
+        function changeText() {
+            header.innerText = 'Mejor que venga Maluma \n y estemos felices los 4 ';
+            document.body.style.backgroundColor = 'red';
+        }
+
+        //console.log('#foo\\bar');
+        //document.querySelector('#foo\\\\bar');
+
+        // strings
+        'this is my string';
+        'my second string';
+        "my name is chris";
+        // numbers
+        10;
+        500;
+        3.14;
+        // booleans (truthy / falsy)
+        true;
+        false;
+
+        // specials
+        undefined;
+        null;
+        NaN;
+        // objects
+        const user = {
+            name: 'Chris',
+            username: 'chrisoncode'
+        };
+        // arrays
+        const users = ['chris', 'nick', 'holly'];
+        const luckyNumbers = [1, 43, 54, 132];
+        const whatever = ['chris', 1, 'holly'];
+
+        const superUsers = [
+            { name: 'chris' },
+            { name: 'nick' },
+            { name: 'holly' }
+        ];
+        console.log(user.name);
+        console.log(superUsers[2].name);
+        console.log(superUsers[2]['name']);
+        // declaring variables
+        var thing        = 'first';
+        const otherThing = {
+            name: 'chris'
+        };
+        let newThing     = 'third';
+        otherThing.name  = 'holly';
+        // ======================
+        let myVariable;
+        myVariable = 'something';
+    </script>
+
+</body>
+
+</html>
